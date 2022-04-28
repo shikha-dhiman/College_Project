@@ -1,4 +1,3 @@
-
 @extends('category.layouts.main')
 
 @section('content')

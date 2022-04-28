@@ -52,6 +52,7 @@
                                         <tr>
                                             <th>Id</th>
                                             <th>Category Name</th>
+                                            <th>Created At</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -59,6 +60,7 @@
                                         <tr>
                                             <th>Id</th>
                                             <th>Category Name</th>
+                                            <th>Created At</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
@@ -67,6 +69,7 @@
                                         <tr>
                                             <td>{{$loop->iteration}}</td>
                                             <td>{{$val->category_name}}</td>
+                                            <td>{{$val->created_at}}</td>
                                             <td><form action="{{ route('category.destroy', $val->id) }}" method="POST">
                                             {{ method_field('DELETE') }}
                                             {{ csrf_field() }}
